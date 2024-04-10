@@ -1,4 +1,9 @@
-<div id="head"></div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/css/uikit.min.css" />
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
 <nav class="uk-navbar-container">
     <div class="uk-container">
         <div uk-navbar>
@@ -44,13 +49,3 @@
         </div>
     </div>
 </nav>
-<script>
-    // Use JavaScript para carregar o conteúdo da outra página
-    fetch('head.html')
-        .then(response => response.text())
-        .then(html => {
-            // Inserir o conteúdo da outra página no elemento div
-            document.getElementById('head').innerHTML = html;
-        })
-        .catch(error => console.error('Erro ao carregar a página:', error));
-</script>
