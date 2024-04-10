@@ -5,6 +5,9 @@
 <!-- UIkit JS -->
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/uikit@3.19.4/dist/js/uikit-icons.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 <style>
     @media screen and (max-width: 767px) {
         #logo {
@@ -16,6 +19,12 @@
         #logo {
             height: 40px;
         }
+    }
+
+    .archivo-black-regular {
+        font-family: "Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 </style>
 <div style="position: absolute; width: 100%; z-index: 1;">
@@ -37,7 +46,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Novidades</a></li>
+                        <li><a href="#">Vestuário</a></li>
+                        <li><a href="#">Acessórios</a></li>
                     </ul>
 
                 </div>
@@ -68,9 +79,11 @@
 <div style="width: 100%;">
     <img style="width: 100%;" src="./images/bannerprincipal.png">
     <div class="uk-position-center-left uk-panel" style="left: 5% !important;">
-        <h1 uk-scrollspy="cls:uk-animation-fade; delay: 500" style="font-size: 50px;font-weight: bold; color: white;" class="uk-text-center">Vista-se como<br> um campeão!</h1>
+        <h1 uk-scrollspy="cls:uk-animation-fade; delay: 500" style="font-size: 45px;font-weight: bold; color: white;"
+            class="archivo-black-regular uk-text-center">Vista-se como<br> um campeão!</h1>
     </div>
     <div class="uk-position-center-right uk-panel" style="right: 3% !important;">
-        <h1 uk-scrollspy="cls:uk-animation-fade; delay: 1500" style="font-size: 50px;font-weight: bold; color: white;" class="uk-text-center">Descubra as coleções <br> exclusivas agora</h1>
+        <h1 uk-scrollspy="cls:uk-animation-fade; delay: 1500" style="font-size: 45px;font-weight: bold; color: white;"
+            class="archivo-black-regular uk-text-center">Descubra as coleções <br> exclusivas agora</h1>
     </div>
 </div>
