@@ -1,4 +1,4 @@
-<iframe src="head.html"></iframe>
+<div id="head"></div>
 <nav class="uk-navbar-container">
     <div class="uk-container">
         <div uk-navbar>
@@ -44,3 +44,13 @@
         </div>
     </div>
 </nav>
+<script>
+    // Use JavaScript para carregar o conteúdo da outra página
+    fetch('head.html')
+        .then(response => response.text())
+        .then(html => {
+            // Inserir o conteúdo da outra página no elemento div
+            document.getElementById('head').innerHTML = html;
+        })
+        .catch(error => console.error('Erro ao carregar a página:', error));
+</script>

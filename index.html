@@ -1,1 +1,11 @@
-<iframe src="header.html"></iframe>
+<div id="header"></div>
+<script>
+    // Use JavaScript para carregar o conteúdo da outra página
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            // Inserir o conteúdo da outra página no elemento div
+            document.getElementById('header').innerHTML = html;
+        })
+        .catch(error => console.error('Erro ao carregar a página:', error));
+</script>
